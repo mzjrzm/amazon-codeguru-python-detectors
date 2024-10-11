@@ -94,7 +94,7 @@ jobs:
 
     - name: Upload results summary to workflow artifacts
       if: steps.assume-iam-role.outcome == 'success' && steps.analysis.outcome == 'success'
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: summary-of-results.csv
         path: summary-of-results.csv
